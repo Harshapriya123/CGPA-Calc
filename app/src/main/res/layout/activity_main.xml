@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#bbdefb"
+    tools:context="com.example.android.cgpacalc.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#90caf9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp">
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="ESP101"
+            android:textSize="30sp" />
+
+        <Button
+            android:background="#42a5f5"
+            android:textColor="#000000"
+            android:id="@+id/grade1plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="plusGrade"
+            android:text="+"
+            android:textSize="30sp"
+            android:layout_margin="0.5dp" />
+
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/grade1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="S"
+            android:textSize="30sp" />
+
+        <Button
+            android:textColor="#000000"
+            android:id="@+id/grade1minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="minusGrade"
+            android:text="-"
+            android:textSize="30sp"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#90caf9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="ITE203"
+            android:textSize="30sp" />
+
+        <Button
+            android:textColor="#000000"
+            android:id="@+id/grade2plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="plusGrade"
+            android:text="+"
+            android:textSize="30sp"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/grade2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="S"
+            android:textSize="30sp" />
+
+        <Button
+            android:textColor="#000000"
+            android:id="@+id/grade2minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="minusGrade"
+            android:text="-"
+            android:textSize="30sp"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#90caf9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="ITE208"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+
+            android:id="@+id/grade3plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="plusGrade"
+            android:text="+"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+
+        <TextView
+            android:id="@+id/grade3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="S"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/grade3minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="minusGrade"
+            android:text="-"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#90caf9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="ITE209"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/grade4plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="plusGrade"
+            android:text="+"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+
+        <TextView
+            android:id="@+id/grade4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="S"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+
+            android:id="@+id/grade4minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="minusGrade"
+            android:text="-"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#90caf9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="ITE309"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+
+            android:id="@+id/grade5plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="plusGrade"
+            android:text="+"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+
+        <TextView
+            android:id="@+id/grade5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="S"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/grade5minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="minusGrade"
+            android:text="-"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#90caf9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="ITE310"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/grade6plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="plusGrade"
+            android:text="+"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+
+        <TextView
+            android:id="@+id/grade6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="S"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/grade6minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="minusGrade"
+            android:text="-"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#90caf9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="ITE318"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/grade7plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="plusGrade"
+            android:text="+"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+
+        <TextView
+            android:id="@+id/grade7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="S"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+
+            android:id="@+id/grade7minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="minusGrade"
+            android:text="-"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#90caf9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="MAT202"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/grade8plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="plusGrade"
+            android:text="+"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+
+        <TextView
+            android:id="@+id/grade8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="S"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+
+            android:id="@+id/grade8minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="minusGrade"
+            android:text="-"
+            android:textSize="30sp"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#90caf9"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="STS202"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/grade9plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="plusGrade"
+            android:text="+"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+
+        <TextView
+            android:id="@+id/grade9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="S"
+            android:textSize="30sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/grade9minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="minusGrade"
+            android:text="-"
+            android:textSize="30sp"
+            android:background="#42a5f5"
+            android:layout_margin="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#2196f3"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="GPA"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/gpa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="10"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#2196f3"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="CGPA"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/cgpa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="8.74"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
+
